@@ -6,9 +6,9 @@ developed under Software-Defined Distributed Accelerated Storage (SODDAS) projec
 
 
 
-Benchmark Tools
+Profiling and Benchmark Tools
 ---------------
-Following benchmark tools have been used for this framework
+Following profiling and benchmark tools have been used for this framework.
 
 - 
 -
