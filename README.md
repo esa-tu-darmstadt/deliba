@@ -25,7 +25,12 @@ To date, three research publications have been produced as part of the DeLiBA pr
 ## Supported FPGA devices
 DeLiBA is primarily PCIe based framework. To this end DeLiBA supporrts PCIe cards namely VC709, NetFPGA-SUME, and Alveo U280
 
+## FPGA Network stack
+DeLiBA has mainly used an open-source FPGA based TCP/IP stack namely [Vitis_with_100Gbps_TCP-IP](https://github.com/fpgasystems/Vitis_with_100Gbps_TCP-IP)
 
+## Host side libraries
+- [Ceph](https://github.com/ceph/ceph)
+- [io-uring](https://github.com/torvalds/linux/tree/master/io_uring)
 
 ## Profiling and Benchmark Tools
 Following profiling and benchmark tools have been used during our work on this framework:
