@@ -1,0 +1,19 @@
+DeLiBA framework Licenses
+Deliba framework includes source code from multiple components, each governed by its own license terms.
+
+Linux Kernel and driver libraries 
+- License: GPL-2.0 WITH Linux-syscall-note  
+  See: LICENSES/preferred/GPL-2.0  
+  *All kernel contributions fall under these terms.*
+
+Ceph libraries
+- License: GPL-2.0 WITH Linux-syscall-note  
+  See: LICENSES/preferred/GPL-2.0
+
+AMD (earlier Xilinx) open-nic
+- License: Apache-2.0  
+  Full text: https://www.apache.org/licenses/
+
+Erasure Coding libraries:
+- License: BSD 3-Clause
+	

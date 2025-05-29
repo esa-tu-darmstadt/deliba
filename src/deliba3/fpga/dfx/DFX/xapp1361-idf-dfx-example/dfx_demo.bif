@@ -1,0 +1,34 @@
+//////////////////////////////////////////////////////////////////////////////
+// © Copyright 2022 Xilinx, Inc.
+// This design is confidential and proprietary of Xilinx, Inc.
+// All Rights Reserved.
+///////////////////////////////////////////////////////////////////////////////
+//   ____  ____
+//  /   /\/   /
+// /___/  \  /   Vendor: Xilinx
+// \   \   \/    Version: 2021.1
+//  \   \        Application: Isolation Design Flow + Dynamic Function eXchange tutorial
+//  /   /        Filename: dfx_demo.bif
+// /___/   /\    Date Last Modified: 15 AUG 2022
+// \   \  /  \
+//  \___\/\___\
+//
+//
+//
+// Board:  ZCU102
+// Device: zu9eg
+// Design Name: project_idf_dfx_zcu102
+// Purpose: Isolation Design Flow + Dynamic Function eXchange Example
+
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]./project_idf_dfx_zcu102/top/zynqmp_fsbl/fsbl_a53.elf
+	[destination_cpu = pmu]./project_idf_dfx_zcu102/top/zynqmp_pmufw/pmufw.elf
+	[load = 0x20000000]./Bitstreams/rp_u_count_count_down_partial.bin
+	[load = 0x20400000]./Bitstreams/top_pb_rp_count_partial.bin
+	[load = 0x20800000]./Bitstreams/rp_u_shift_shift_left_partial.bin
+	[load = 0x20C00000]./Bitstreams/top_pb_rp_shift_partial.bin
+	[destination_device = pl]./Bitstreams/top.bit
+	[destination_cpu = a53-0]./project_idf_dfx_zcu102/dfx_demo/Debug/dfx_demo.elf
+}
