@@ -4,7 +4,7 @@
 This repository contains the source code for the **De**velopment of **Li**nux **B**lock I/O **A**ccelerators (DeLiBA) framework, which is being developed by the Embedded Systems and Applications (ESA) Group within the Computer Science department at the Technical University of Darmstadt, Germany.
 
 ## Rationale behind DeLiBA (background) framework
-At its core, DeLiBA is a block storage (disk block I/O) acceleration framework. It is developed to accelerate block I/O performance using specialized hardware accelerators, particularly FPGAs (Field-Programmable Gate Arrays) deployed as SmartNICs in data centers. As emerging FPGA frameworks aim to accelerate I/O operations (particularly AI workload), there is a growing need to critically reassess traditional system calls in Linux that were originally designed for earlier generations of hardware. Despite the substantial performance gains achieved by modern FPGA-based frameworks, we show that legacy system calls often fail to meet the performance and efficiency demands of today’s high-speed, hardware-accelerated storage environments.
+At its core, DeLiBA is a software-hardware co-design block storage (disk block I/O) acceleration framework. It is developed to accelerate block I/O performance using specialized hardware accelerators, particularly FPGAs (Field-Programmable Gate Arrays) deployed as SmartNICs in data centers. As emerging FPGA frameworks aim to accelerate I/O operations (particularly AI workload), there is a growing need to critically reassess traditional system calls in Linux that were originally designed for earlier generations of hardware. Despite the substantial performance gains achieved by modern FPGA-based frameworks, we show that legacy system calls often fail to meet the performance and efficiency demands of today’s high-speed, hardware-accelerated storage environments.
 
 The below composite image illustrates the current state of the Linux block I/O stack, the evolution of HDD technologies over time, and highlights the emergence of cutting-edge HAMR drivess. It also captures the interplay between I/O stacks, storage devices, and AI training workloads in 2024.
 
@@ -74,7 +74,7 @@ Following profiling and benchmark tools have been used during our work on this f
 
 
 # Acknowledgements
-The DeLiBA project has been co-funded by the German Federal Ministry of Education and Research (BMBF) under the Software Defined and Distributed Accelerated Storage (SODDAS) initiative. We gratefully acknowledge Amazon Research for providing research credits. We also extend our sincere thanks to our industry partner, a global leader in database management systems and cloud operations. Additionally, we would like to thank USENIX, Red Hat, Do IT Now, and the Linux Foundation for awarding travel grants to the main contributor of DeLiBA framework, Babar Khan.
+The DeLiBA project has been co-funded by the German Federal Ministry of Education and Research (BMBF) under the Software Defined and Distributed Accelerated Storage (SODDAS) initiative. We gratefully acknowledge Amazon Research for providing research credits. We also extend our sincere thanks to our industry partner, a global leader in database management systems and cloud operations. Additionally, we would like to thank USENIX, Red Hat, Do IT Now, and the Linux Foundation (Dan Kohn Scholarship) for awarding travel grants to the main contributor of DeLiBA framework, Babar Khan.
 
 
 Contributions and Issues
